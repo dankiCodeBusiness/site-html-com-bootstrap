@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+
+    <title>Site Html com Bootstrap 5</title>
+  </head>
+  <body class="position-relative">
+    <nav
+      id="home-navigation"
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+    >
+      <div class="container">
+        <a class="navbar-brand navigate" data-id="home-navigation" href="#">
+          <img src="./assets/images/logo.png" alt="Danki Club" width="140" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active navigate"
+                data-id="home-navigation"
+                aria-current="page"
+                href="#"
+                >Ínicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigate" data-id="card-navigation" href="#"
+                >Cards</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigate" data-id="video-navigation" href="#"
+                >Vídeos</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Formulários
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <button
+                    class="dropdown-item btn btn-link"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Newsletter
+                  </button>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item navigate"
+                    data-id="contact-navigation"
+                    href="#"
+                    >Contato</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="ratio ratio-16x9">
+      <video
+        controls
+        autoplay
+        muted
+        poster="./assets/images/background.jpeg"
+        src="./assets/videos/video.mp4"
+      ></video>
+    </div>
+    <div class="container pb-3">
+      <div class="my-5">
+        <h1>Hello World!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A suscipit
+          excepturi omnis minus dignissimos, corrupti iusto nemo eveniet quas.
+          Fugiat, sequi aperiam. Illo reiciendis rem deleniti in similique
+          impedit doloremque.
+        </p>
+      </div>
+      <div class="border ps-3 pe-3 pt-3 pb-3">
+        <h2>Olá</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, sequi
+          numquam laudantium facilis incidunt pariatur quia modi iste iusto
+          dignissimos neque est facere cum, laboriosam inventore culpa, dolore
+          tempore! Soluta?
+        </p>
+      </div>
+      <div class="border border-primary border-2 mt-5 p-4">
+        <h3>Olá de novo!</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis hic
+          sequi, repellendus voluptatum illum atque sint nostrum beatae
+          doloremque consequuntur ut nobis a perspiciatis quae aut quaerat nulla
+          sit sunt.
+        </p>
+      </div>
+      <div class="row my-5" id="card-navigation">
+        <div class="col-12 col-md-3">
+          <div class="card mb-3">
+            <img
+              src="./assets/images/background.jpeg"
+              class="card-img-top"
+              alt="Card de colunas"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text text-success">
+                Some quick example text to build
+              </p>
+              <a href="#" class="btn btn-outline-primary">Só vai</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card mb-3">
+            <img
+              src="./assets/images/background.jpeg"
+              class="card-img-top"
+              alt="Card de colunas"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text text-success">
+                Some quick example text to build
+              </p>
+              <a href="#" class="btn btn-outline-primary">Só vai</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card mb-3">
+            <img
+              src="./assets/images/background.jpeg"
+              class="card-img-top"
+              alt="Card de colunas"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text text-success">
+                Some quick example text to build
+              </p>
+              <a href="#" class="btn btn-outline-primary">Só vai</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card mb-3">
+            <img
+              src="./assets/images/background.jpeg"
+              class="card-img-top"
+              alt="Card de colunas"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text text-success">
+                Some quick example text to build
+              </p>
+              <a href="#" class="btn btn-outline-primary">Só vai</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5" id="video-navigation">
+        <div class="col-12 col-md-6 mb-3">
+          <div class="ratio ratio-16x9">
+            <video
+              src="./assets/videos/video.mp4"
+              poster="./assets/images/avatar.jpeg"
+              controls
+            ></video>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <div class="ratio ratio-16x9">
+            <video
+              src="./assets/videos/video.mp4"
+              poster="./assets//images/background.jpeg"
+              controls
+            ></video>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <div class="ratio ratio-16x9">
+            <video src="./assets/videos/video.mp4" controls></video>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+          <div class="ratio ratio-16x9">
+            <video src="./assets/videos/video.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5" id="contact-navigation">
+        <div class="col-12">
+          <form action="" method="post" id="form-contact">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="name">Digite seu nome</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="name"
+                  placeholder="Digite o nome completo"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="email">Digite seu nome</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  placeholder="Digite o seu melhor e-mail"
+                />
+              </div>
+              <div class="col-12 my-4">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-lg btn-primary rounded-circle position-sticky bottom-0 navigate"
+        data-id="home-navigation"
+      >
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-4">
+                <label for="validationCustom01" class="form-label"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  value="Mark"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom02"
+                  value="Otto"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label"
+                  >Username</label
+                >
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">Please choose a username.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom03"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid city.</div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid state.</div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom05"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid zip.</div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">
+                  Submit form
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <button type="button" class="btn btn-primary">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script>
+    $(".navigate").on("click", function (event) {
+      event.preventDefault();
+      var id = $(this).data("id");
+      var element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView();
+      }
+    });
+    $("#form-contact").on("submit", function (event) {
+      event.preventDefault();
+      alert("Formulário enviado com sucesso!");
+    });
+  </script>
+</html>
